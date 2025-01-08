@@ -919,6 +919,21 @@ the website, in dark theme
   }
 }
 
+@media screen and (max-width: 992px) {
+.whatsapp-fixed {
+  position: fixed;
+  right: 2rem;
+  bottom: 31px;
+  display: inline-flex;
+  padding: .5rem;
+  border-radius: 50%;
+  z-index: var(--z-tooltip);
+  transition: .4s;
+  font-size: 1.5rem;
+  color: white;
+  background-color: #59CE72;
+}
+}
 @media screen and (min-width: 320px) {
   .nav__logo img {
     width: 180px;
@@ -989,6 +1004,8 @@ the website, in dark theme
     row-gap: 3.5rem;
     z-index: 99999;
   }
+
+  
 }
 
 @media screen and (min-width: 767px) {
@@ -1093,7 +1110,7 @@ the website, in dark theme
     padding-right: 7rem;
   }
 
-  
+
 
   .steps__container {
     grid-template-columns: repeat(3, 1fr);
