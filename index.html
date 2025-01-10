@@ -14,6 +14,9 @@
     <!--=============== CSS ===============-->
     <link rel="stylesheet" href="style.css">
 
+    <!--=============== Glide ===============-->
+    <link rel="stylesheet" href="glide.core.min.css">
+
     <title>Fragrance Land</title>
 </head>
 
@@ -59,10 +62,12 @@
                 <!-- Theme change button -->
                 <!-- <i class="ri-moon-line change-theme" id="theme-button"></i> -->
 
-                <a href="https://www.facebook.com/profile.php?id=61569962679889" target="_blank" class="home__social-link">
+                <a href="https://www.facebook.com/profile.php?id=61569962679889" target="_blank"
+                    class="home__social-link">
                     <i class="ri-facebook-fill"></i>
                 </a>
-                <a href="https://www.instagram.com/fragranceland_perfumes_tradind/" target="_blank" class="home__social-link">
+                <a href="https://www.instagram.com/fragranceland_perfumes_tradind/" target="_blank"
+                    class="home__social-link">
                     <i class="ri-instagram-line"></i>
                 </a>
 
@@ -74,26 +79,82 @@
     </header>
 
     <main class="main">
+
+
+
+
+
         <!--==================== HOME ====================-->
-        <section class="home" id="home">
-            <div class=" container-fluid grid">
-                <img src="img/BANNER.png" alt="" class="home__img">
+        <!-- <section class="home" id="home">
+            <div class="home__container container grid">
+                <img src="img/S (23).jpg" alt="" class="home__img">
 
-
-                <!-- <div class="home__data">
-                    <h1 class="home__title">
-                        Sporting goods <br> Store-Doha
-                    </h1>
-                    <p class="home__description">
-                        Applying a fragrance is the final touch to make you feel complete and confident.
-                    </p>
-                    <a href="#about" class="button button--flex">
-                        Explore <i class="ri-arrow-right-down-line button__icon"></i>
-                    </a>
-                </div> -->
-
-                
+                <img src="img/S (23).jpg" alt="" class="home__img">
+                <img src="img/S (23).jpg" alt="" class="home__img">
             </div>
+        </section> -->
+
+        <section class="home-banner container desktop-home">
+            <div class="col-lg-9 mx-auto">
+                <div class="glide" id="intro">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="slide_bg">
+                                    <div class="swiper-text">
+                                        <div class="position-relative fit-content">
+                                            <div class="play-btn">
+                                                <img src="img/banner-1.jpg" alt="" class="home__img">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="slide_bg">
+                                    <div class="swiper-text">
+                                        <div class="position-relative fit-content">
+                                            <div class="play-btn">
+                                                <img src="img/banner -3.png" alt="" class="home__img">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="slide_bg">
+                                    <div class="swiper-text">
+                                        <div class="position-relative fit-content">
+                                            <div class="play-btn">
+                                                <img src="img/S (23).jpg" alt="" class="home__img">
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </li>
+
+
+                        </ul>
+                        <div class="glide__bullets" data-glide-el="controls[nav]">
+                            <div class="glide__bullet"></div>
+                            <div class="glide__bullet- active"></div>
+                            <div class="glide__bullet"></div>
+                        </div>
+                    </div>
+                    <!-- <div data-glide-el="controls">
+                        <button class="slider-prev" data-glide-dir="<">
+                            <img src="images/arrow-circle-right.svg" alt="">
+                        </button>
+                        <button class="slider-next" data-glide-dir=">">
+                            <img src="images/arrow-circle-right.svg" alt="">
+                        </button>
+                    </div> -->
+                </div>
+            </div>
+
         </section>
         <!--==================== PRODUCTS ====================-->
         <section class="product section container" id="products">
@@ -111,24 +172,11 @@
                     <!-- <div class="product__circle"></div> -->
                     <img src="img/creed.png" alt="" class="product__img">
 
-                    <h3 class="product__title">Creed Aventus Eau de <br> Parfum For Men</h3>
+                    <h3 class="product__title">Creed Aventus</h3>
                     <h3 class="product__code">F12</h3>
                     <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
 
-                    <a href="https://wa.me/+971585852008" class="button--flex product__button" >
-                        <i class="ri-whatsapp-line"></i>
-                    </a>
-                </article>
-
-                <article class="product__card">
-                    <!-- <div class="product__circle"></div> -->
-                    <img src="img/cool-water.png" alt="" class="product__img">
-
-                    <h3 class="product__title">Davidoff Cool Water <br> Eau De Toilette for Men</h3>
-                    <h3 class="product__code">F12</h3>
-                    <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
-
-                    <a href="https://wa.me/+971585852008" class="button--flex product__button" >
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
                         <i class="ri-whatsapp-line"></i>
                     </a>
                 </article>
@@ -137,24 +185,11 @@
                     <!-- <div class="product__circle"></div> -->
                     <img src="img/creed.png" alt="" class="product__img">
 
-                    <h3 class="product__title">Creed Aventus Eau de <br> Parfum For Men</h3>
+                    <h3 class="product__title">Davidoff Cool Water </h3>
                     <h3 class="product__code">F12</h3>
                     <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
 
-                    <a href="https://wa.me/+971585852008" class="button--flex product__button" >
-                        <i class="ri-whatsapp-line"></i>
-                    </a>
-                </article>
-
-                <article class="product__card">
-                    <!-- <div class="product__circle"></div> -->
-                    <img src="img/cool-water.png" alt="" class="product__img">
-
-                    <h3 class="product__title">Davidoff Cool Water <br> Eau De Toilette for Men</h3>
-                    <h3 class="product__code">F12</h3>
-                    <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
-
-                    <a href="https://wa.me/+971585852008" class="button--flex product__button" >
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
                         <i class="ri-whatsapp-line"></i>
                     </a>
                 </article>
@@ -163,24 +198,50 @@
                     <!-- <div class="product__circle"></div> -->
                     <img src="img/creed.png" alt="" class="product__img">
 
-                    <h3 class="product__title">Creed Aventus Eau de <br> Parfum For Men</h3>
+                    <h3 class="product__title">Creed Aventus</h3>
                     <h3 class="product__code">F12</h3>
                     <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
 
-                    <a href="https://wa.me/+971585852008" class="button--flex product__button" >
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
                         <i class="ri-whatsapp-line"></i>
                     </a>
                 </article>
 
                 <article class="product__card">
                     <!-- <div class="product__circle"></div> -->
-                    <img src="img/cool-water.png" alt="" class="product__img">
+                    <img src="img/creed.png" alt="" class="product__img">
 
-                    <h3 class="product__title">Davidoff Cool Water <br> Eau De Toilette for Men</h3>
+                    <h3 class="product__title">Davidoff Cool Water </h3>
                     <h3 class="product__code">F12</h3>
                     <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
 
-                    <a href="https://wa.me/+971585852008" class="button--flex product__button" >
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </article>
+
+                <article class="product__card">
+                    <!-- <div class="product__circle"></div> -->
+                    <img src="img/creed.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Creed Aventus</h3>
+                    <h3 class="product__code">F12</h3>
+                    <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
+
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </article>
+
+                <article class="product__card">
+                    <!-- <div class="product__circle"></div> -->
+                    <img src="img/creed.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Davidoff Cool Water </h3>
+                    <h3 class="product__code">F12</h3>
+                    <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
+
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
                         <i class="ri-whatsapp-line"></i>
                     </a>
                 </article>
@@ -188,29 +249,148 @@
                     <!-- <div class="product__circle"></div> -->
                     <img src="img/creed.png" alt="" class="product__img">
 
-                    <h3 class="product__title">Creed Aventus Eau de <br> Parfum For Men</h3>
+                    <h3 class="product__title">Creed Aventus</h3>
                     <h3 class="product__code">F12</h3>
                     <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
 
-                    <a href="https://wa.me/+971585852008" class="button--flex product__button" >
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
                         <i class="ri-whatsapp-line"></i>
                     </a>
                 </article>
 
                 <article class="product__card">
                     <!-- <div class="product__circle"></div> -->
-                    <img src="img/cool-water.png" alt="" class="product__img">
+                    <img src="img/creed.png" alt="" class="product__img">
 
-                    <h3 class="product__title">Davidoff Cool Water <br> Eau De Toilette for Men</h3>
+                    <h3 class="product__title">Davidoff Cool Water </h3>
                     <h3 class="product__code">F12</h3>
                     <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
 
-                    <a href="https://wa.me/+971585852008" class="button--flex product__button" >
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
                         <i class="ri-whatsapp-line"></i>
                     </a>
                 </article>
             </div>
         </section>
+
+        <!--==================== BRANDS ====================-->
+        <div class="featured-section">
+        <section class="product featured-section section container" id="products">
+            <h2 class="featured__title-center">
+                Featured Brands
+            </h2>
+
+            <!-- <p class="product__description">
+                Here are some selected items from our showroom, all are in excellent <br>
+                shape and has a long life span. Buy and enjoy best quality.
+            </p> -->
+
+            <div class="product__container grid">
+                <article class="product__card">
+                    <!-- <div class="product__circle"></div> -->
+                    <img src="img/creed.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Creed Aventus</h3>
+                    <h3 class="product__code">F12</h3>
+                    <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
+
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </article>
+
+                <article class="product__card">
+                    <!-- <div class="product__circle"></div> -->
+                    <img src="img/creed.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Davidoff Cool Water </h3>
+                    <h3 class="product__code">F12</h3>
+                    <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
+
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </article>
+
+                <article class="product__card">
+                    <!-- <div class="product__circle"></div> -->
+                    <img src="img/creed.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Creed Aventus</h3>
+                    <h3 class="product__code">F12</h3>
+                    <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
+
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </article>
+
+                <article class="product__card">
+                    <!-- <div class="product__circle"></div> -->
+                    <img src="img/creed.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Davidoff Cool Water </h3>
+                    <h3 class="product__code">F12</h3>
+                    <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
+
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </article>
+
+                <article class="product__card">
+                    <!-- <div class="product__circle"></div> -->
+                    <img src="img/creed.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Creed Aventus</h3>
+                    <h3 class="product__code">F12</h3>
+                    <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
+
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </article>
+
+                <article class="product__card">
+                    <!-- <div class="product__circle"></div> -->
+                    <img src="img/creed.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Davidoff Cool Water </h3>
+                    <h3 class="product__code">F12</h3>
+                    <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
+
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </article>
+                <article class="product__card">
+                    <!-- <div class="product__circle"></div> -->
+                    <img src="img/creed.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Creed Aventus</h3>
+                    <h3 class="product__code">F12</h3>
+                    <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
+
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </article>
+
+                <article class="product__card">
+                    <!-- <div class="product__circle"></div> -->
+                    <img src="img/creed.png" alt="" class="product__img">
+
+                    <h3 class="product__title">Davidoff Cool Water </h3>
+                    <h3 class="product__code">F12</h3>
+                    <span class="product__price"><strike class="color-hash">1200 Dhs</strike> <br> 1000 Dhs</span>
+
+                    <a href="https://wa.me/+971505009798" class="button--flex product__button">
+                        <i class="ri-whatsapp-line"></i>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </div>
 
         <!--==================== ABOUT ====================-->
         <section class="about section container" id="about">
@@ -521,13 +701,15 @@
     <!-- <a href="#" class="scrollup" id="scroll-up">
         <i class="ri-arrow-up-fill scrollup__icon"></i>
     </a> -->
-    <a href="https://wa.me/+971585852008" class="whatsapp-fixed" id="whatsapp-fixed">
+    <a href="https://wa.me/+971505009798" class="whatsapp-fixed" id="whatsapp-fixed">
         <i class="ri-whatsapp-line"></i>
     </a>
     <!--=============== SCROLL REVEAL ===============-->
     <script src="script.min.js"></script>
 
     <!--=============== MAIN JS ===============-->
+
+    <script src="glide.js"></script>
     <script src="script.js"></script>
 </body>
 

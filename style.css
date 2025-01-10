@@ -357,6 +357,25 @@ the website, in dark theme
   transform: rotate(90deg);
 }
 
+.home-banner img {
+  margin-top: 150px;
+}
+
+.featured__title-center {
+  text-align: start;
+}
+
+.featured-section {
+  background-color: #cfcfcf;
+}
+
+.glide__slide {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
 .home__social-follow::after {
   content: '';
   position: absolute;
@@ -920,20 +939,25 @@ the website, in dark theme
 }
 
 @media screen and (max-width: 992px) {
-.whatsapp-fixed {
-  position: fixed;
-  right: 2rem;
-  bottom: 31px;
-  display: inline-flex;
-  padding: .5rem;
-  border-radius: 50%;
-  z-index: var(--z-tooltip);
-  transition: .4s;
-  font-size: 1.5rem;
-  color: white;
-  background-color: #59CE72;
+  .whatsapp-fixed {
+    position: fixed;
+    right: 2rem;
+    bottom: 31px;
+    display: inline-flex;
+    padding: .5rem;
+    border-radius: 50%;
+    z-index: var(--z-tooltip);
+    transition: .4s;
+    font-size: 1.5rem;
+    color: white;
+    background-color: #59CE72;
+  }
+
+  .home-banner img {
+    margin-top: 50px;
+  }
 }
-}
+
 @media screen and (min-width: 320px) {
   .nav__logo img {
     width: 180px;
@@ -979,6 +1003,8 @@ the website, in dark theme
     column-gap: 5rem;
   }
 
+
+
   .footer__subscribe {
     width: 400px;
   }
@@ -1005,7 +1031,7 @@ the website, in dark theme
     z-index: 99999;
   }
 
-  
+
 }
 
 @media screen and (min-width: 767px) {
@@ -1032,13 +1058,18 @@ the website, in dark theme
     margin-left: 0;
   }
 
-  .home__container,
+
   .about__container,
   .questions__container,
   .contact__container,
   .footer__container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .home__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 
   .home {
     padding: 10rem 0 5rem;
@@ -1098,12 +1129,13 @@ the website, in dark theme
     font-size: var(--h1-font-size);
   }
 
-  .home {
-    padding: 5rem 0 5rem;
+  .home__img {
+    width: 440px;
+    justify-self: center;
   }
 
-  .home__img {
-    width: 100%;
+  .home {
+    padding: 12rem 0 5rem;
   }
 
   .home__description {
