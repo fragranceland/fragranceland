@@ -487,10 +487,14 @@ the website, in dark theme
 }
 
 /*=============== STEPS ===============*/
+
+
 .steps__bg {
-  background-color: var(--first-color);
+  background-color: #fcf8f5;
   padding: 3rem 2rem 2rem;
   border-radius: 1rem;
+  max-width: 100%;
+  
 }
 
 .steps__container {
@@ -499,15 +503,26 @@ the website, in dark theme
 }
 
 .steps__title {
-  color: #FFF;
+  color: #000000;
+  text-align: start;
+  margin-bottom: 5px;
+}
+
+.steps__sub-title{
+  color: #424242;
+  font-weight: 400;
+  font-size: .875rem;
 }
 
 .steps__card {
   background-color: var(--container-color);
-  padding: 2.5rem 3rem 2rem 1.5rem;
+  /* padding: 2.5rem 3rem 2rem 1.5rem; */
   border-radius: 1rem;
 }
 
+.steps__card img{
+  border-radius: 10px;
+}
 .steps__card-number {
   display: inline-block;
   background-color: var(--first-color-alt);
@@ -774,6 +789,13 @@ the website, in dark theme
 }
 
 /*=============== FOOTER ===============*/
+.footer{
+  background-color: black;
+}
+
+.footer li {
+  color: rgb(255, 255, 255);
+}
 .footer__container {
   row-gap: 3rem;
 }
@@ -802,6 +824,7 @@ the website, in dark theme
 .footer__title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-1-5);
+  color: white;
 }
 
 .footer__subscribe {
@@ -841,7 +864,7 @@ the website, in dark theme
 
 .footer__social-link {
   font-size: 1rem;
-  color: var(--text-color);
+  color: white;
   transition: .3s;
 }
 
@@ -1172,10 +1195,8 @@ the website, in dark theme
     padding-right: 7rem;
   }
 
-
-
   .steps__container {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .steps__bg {
