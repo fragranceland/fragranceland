@@ -5,7 +5,7 @@ var glide = new Glide("#intro1", {
     perView: 4,
     gap: 100,
     autoplay: 3000,
-    // hoverpause: false, 
+    hoverpause: false, 
     animationDuration: 3000, // Set the transition duration to 1000ms (1 second)
     animationTimingFunc: 'linear',
     rewind: false,      
