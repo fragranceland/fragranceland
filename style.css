@@ -357,10 +357,6 @@ the website, in dark theme
   transform: rotate(90deg);
 }
 
-.home-banner img {
-  margin-top: 150px;
-}
-
 .featured__title-center {
   text-align: start;
 }
@@ -534,9 +530,11 @@ the website, in dark theme
   margin-bottom: var(--mb-1-5);
   transition: .3s;
 }
-.steps-section{
+
+.steps-section {
   margin: 0 !important;
 }
+
 .steps__card-title {
   font-size: var(--h3-font-size);
   margin-bottom: var(--mb-0-5);
@@ -1011,10 +1009,6 @@ the website, in dark theme
     padding: 2.5rem 0 2rem;
   }
 
-  .section {
-    padding: 0rem 0 1rem;
-  }
-
   .product__container {
     padding: 0rem 0;
   }
@@ -1065,9 +1059,6 @@ the website, in dark theme
     padding: 2.5rem 0 2rem;
   }
 
-  .section {
-    padding: 0rem 0 1rem;
-  }
 
   .home__social {
     position: absolute;
@@ -1167,6 +1158,20 @@ the website, in dark theme
     z-index: 99999;
   }
 
+  .product__container {
+    grid-template-columns: repeat(3, 170px);
+    justify-content: center;
+    column-gap: 5rem;
+  }
+
+  .home-banner {
+    padding-top: 80px;
+  }
+
+  .steps__container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
 }
 
 /* For large devices */
@@ -1212,7 +1217,6 @@ the website, in dark theme
     padding: 3.5rem 2.5rem;
     max-width: 100%;
     width: 100%;
-    padding-inline: 100px;
   }
 
   .steps__card-title {
@@ -1270,6 +1274,10 @@ the website, in dark theme
   .footer__copy {
     margin: 7rem 0 2rem;
   }
+
+  .home-banner {
+    padding-top: 140px;
+}
 
 
 }

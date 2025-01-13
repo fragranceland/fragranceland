@@ -19,6 +19,7 @@ var glide = new Glide("#intro1", {
     breakpoints: {
         1200: { perView: 3,  }, // Show 4 slides on screens larger than 1200px
         900: { perView: 2 },  // Show 2 slides on screens between 900px and 1200px
+        768: { perView: 3 },  // Show 2 slides on screens between 900px and 1200px
         600: { perView: 2, gap: 10, },  // Show 1 slide on smaller screens
     }
 });
@@ -42,8 +43,9 @@ var glide = new Glide("#intro", {
         next: ".slider-next",
     },
     breakpoints: {
-        1200: { perView: 3 }, // Show 4 slides on screens larger than 1200px
-        900: { perView: 2 },  // Show 2 slides on screens between 900px and 1200px
+        1200: { perView: 5 }, // Show 4 slides on screens larger than 1200px
+        900: { perView: 4 },  // Show 2 slides on screens between 900px and 1200px
+        768: { perView: 4 },  // Show 2 slides on screens between 900px and 1200px
         600: { perView: 3,  gap: 15, },  // Show 1 slide on smaller screens
     }
 });
