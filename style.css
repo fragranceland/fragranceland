@@ -48,6 +48,10 @@
   --z-fixed: 100;
 }
 
+::selection {
+  cursor: default;
+}
+
 /* Responsive typography */
 @media screen and (min-width: 968px) {
   :root {
@@ -66,6 +70,7 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  cursor: auto;
 }
 
 html {
@@ -78,6 +83,13 @@ input,
 textarea {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
+  user-select: none;
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
 }
 
 body {
@@ -382,9 +394,6 @@ the website, in dark theme
   margin: 0 !important;
 }
 
-.logo-slide img {
-  margin-top: 100px;
-}
 
 .home__social-follow::after {
   content: '';
@@ -620,7 +629,7 @@ the website, in dark theme
 
 /*=============== QUESTIONS ===============*/
 .questions {
-  background-color: var(--first-color-lighten);
+  background-color: #fcf8f5;
 }
 
 .questions__container {
@@ -995,7 +1004,6 @@ the website, in dark theme
   }
 
   .logo-slide img {
-    margin-top: 10px;
     margin-bottom: 0px;
   }
 }
@@ -1023,9 +1031,6 @@ the website, in dark theme
     z-index: 99999;
   }
 
-  .logo-slide img {
-    margin-top: 10px;
-  }
 }
 
 
@@ -1277,7 +1282,7 @@ the website, in dark theme
 
   .home-banner {
     padding-top: 140px;
-}
+  }
 
 
 }
