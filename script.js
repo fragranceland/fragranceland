@@ -1,14 +1,30 @@
 
+let counter = 0;
+const loadingCounter = document.getElementById('loading-counter');
+const loadingScreen = document.getElementById('loading-screen');
+
+const interval = setInterval(() => {
+    counter++;
+    loadingCounter.textContent = `${counter}%`;
+
+    if (counter === 100) {
+        clearInterval(interval);
+        loadingScreen.style.opacity = '0';
+        setTimeout(() => {
+            loadingScreen.style.display = 'none';
+        }, 500); // Delay for smooth transition
+    }
+}, 30); // Adjust speed by changing the number (smaller = faster)
 
 var glide = new Glide("#intro1", {
     type: "carousel",
     perView: 4,
     gap: 100,
     autoplay: 3000,
-    hoverpause: false, 
+    hoverpause: false,
     animationDuration: 3000, // Set the transition duration to 1000ms (1 second)
     animationTimingFunc: 'linear',
-    rewind: false,      
+    rewind: false,
     pagination: {
         el: ".glide__bullet",
     },
@@ -17,7 +33,7 @@ var glide = new Glide("#intro1", {
         next: ".slider-next",
     },
     breakpoints: {
-        1200: { perView: 3,  }, // Show 4 slides on screens larger than 1200px
+        1200: { perView: 3, }, // Show 4 slides on screens larger than 1200px
         900: { perView: 2 },  // Show 2 slides on screens between 900px and 1200px
         768: { perView: 3 },  // Show 2 slides on screens between 900px and 1200px
         600: { perView: 2, gap: 10, },  // Show 1 slide on smaller screens
@@ -26,15 +42,38 @@ var glide = new Glide("#intro1", {
 glide.mount();
 
 
+document.addEventListener("DOMContentLoaded", () => {
+    let counter = 0;
+    const loadingCounter = document.getElementById('loading-counter');
+    const loadingScreen = document.getElementById('loading-screen');
+    const mainContent = document.getElementById('main-content');
+
+    const interval = setInterval(() => {
+        counter++;
+        loadingCounter.textContent = `${counter}%`;
+
+        if (counter === 100) {
+            clearInterval(interval);
+            loadingScreen.style.opacity = '0';
+
+            setTimeout(() => {
+                loadingScreen.style.display = 'none';
+                mainContent.style.display = 'block';
+            }, 1000); // Smooth transition
+        }
+    }, 25); // Adjust speed for smoother effect
+});
+
+
 var glide = new Glide("#intro", {
     type: "carousel",
     perView: 7,
     gap: 100,
     autoplay: 3000,
-    hoverpause: false, 
+    hoverpause: false,
     animationDuration: 3000, // Set the transition duration to 1000ms (1 second)
     animationTimingFunc: 'linear',
-    rewind: false,      
+    rewind: false,
     pagination: {
         el: ".glide__bullet",
     },
@@ -46,7 +85,7 @@ var glide = new Glide("#intro", {
         1200: { perView: 5 }, // Show 4 slides on screens larger than 1200px
         900: { perView: 4 },  // Show 2 slides on screens between 900px and 1200px
         768: { perView: 4 },  // Show 2 slides on screens between 900px and 1200px
-        600: { perView: 3,  gap: 15, },  // Show 1 slide on smaller screens
+        600: { perView: 3, gap: 15, },  // Show 1 slide on smaller screens
     }
 });
 glide.mount();
@@ -187,6 +226,9 @@ const sr = ScrollReveal({
     delay: 400,
     // reset: true
 })
+
+
+
 
 sr.reveal(`.home__data`)
 sr.reveal(`.home__img`, { delay: 500 })
