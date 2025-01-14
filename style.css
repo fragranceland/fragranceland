@@ -133,7 +133,7 @@ textarea {
 }
 
 body {
-  margin: var(--header-height) 0 0 0;
+  /* margin: var(--header-height) 0 0 0; */
   background-color: var(--body-color);
   color: var(--text-color);
   transition: .4s;
@@ -426,7 +426,7 @@ the website, in dark theme
 
 .home-banner {
   max-width: 100% !important;
-  margin: 0 !important;
+  margin: 55px 0 0 0 !important;
 }
 
 .logo-slide {
@@ -1210,7 +1210,7 @@ the website, in dark theme
   }
 
   .home-banner {
-    padding-top: 80px;
+    /* padding-top: 80px; */
   }
 
   .steps__container {
@@ -1321,7 +1321,7 @@ the website, in dark theme
   }
 
   .home-banner {
-    padding-top: 140px;
+    padding-top: 100px;
   }
 
 
