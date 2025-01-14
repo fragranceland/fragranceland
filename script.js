@@ -1,20 +1,4 @@
 
-let counter = 0;
-const loadingCounter = document.getElementById('loading-counter');
-const loadingScreen = document.getElementById('loading-screen');
-
-const interval = setInterval(() => {
-    counter++;
-    loadingCounter.textContent = `${counter}%`;
-
-    if (counter === 100) {
-        clearInterval(interval);
-        loadingScreen.style.opacity = '0';
-        setTimeout(() => {
-            loadingScreen.style.display = 'none';
-        }, 500); // Delay for smooth transition
-    }
-}, 30); // Adjust speed by changing the number (smaller = faster)
 
 var glide = new Glide("#intro1", {
     type: "carousel",
