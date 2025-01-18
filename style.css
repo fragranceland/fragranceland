@@ -675,6 +675,10 @@ the website, in dark theme
   transform: translateY(-.5rem);
 }
 
+.nav__link{
+  cursor: pointer;
+}
+
 /*=============== QUESTIONS ===============*/
 .questions {
   background-color: #fcf8f5;
@@ -1231,6 +1235,10 @@ the website, in dark theme
     padding: 6rem 2rem 0rem;
   }
 
+  .product{
+    padding-top: 9rem;
+  }
+
   .steps-section {
     margin: 0;
     max-width: 100%;
@@ -1320,7 +1328,7 @@ the website, in dark theme
   }
 
   .home-banner {
-    padding-top: 100px;
+    padding-top: 150px;
   }
 
 
@@ -1371,7 +1379,7 @@ the website, in dark theme
   }
 
   .product__container {
-    padding: 4rem 0;
+    padding: 0 0 4rem 0;
     grid-template-columns: repeat(4, 315px);
     gap: 4rem 2rem;
   }
