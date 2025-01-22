@@ -24,7 +24,7 @@
   --body-font: 'Poppins', sans-serif;
   --big-font-size: 2rem;
   --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
+  --h2-font-size: 1rem;
   --h3-font-size: 1rem;
   --normal-font-size: .938rem;
   --small-font-size: .813rem;
@@ -218,7 +218,7 @@ the website, in dark theme
 
 /*=============== REUSABLE CSS CLASSES ===============*/
 .section {
-  padding: 5.5rem 0 1rem;
+  padding: 1rem 0 1rem;
 }
 
 .section__title,

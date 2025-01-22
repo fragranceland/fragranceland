@@ -25,30 +25,6 @@ var glide = new Glide("#intro1", {
 });
 glide.mount();
 
-
-document.addEventListener("DOMContentLoaded", () => {
-    let counter = 0;
-    const loadingCounter = document.getElementById('loading-counter');
-    const loadingScreen = document.getElementById('loading-screen');
-    const mainContent = document.getElementById('main-content');
-
-    const interval = setInterval(() => {
-        counter++;
-        loadingCounter.textContent = `${counter}%`;
-
-        if (counter === 100) {
-            clearInterval(interval);
-            loadingScreen.style.opacity = '0';
-
-            setTimeout(() => {
-                loadingScreen.style.display = 'none';
-                mainContent.style.display = 'block';
-            }, 1000); // Smooth transition
-        }
-    }, 25); // Adjust speed for smoother effect
-});
-
-
 var glide = new Glide("#intro", {
     type: "carousel",
     perView: 7,
@@ -154,7 +130,12 @@ function scrollActive() {
         const sectionHeight = current.offsetHeight,
             sectionTop = current.offsetTop - 58,
             sectionId = current.getAttribute('id')
-
+        const links = document.querySelectorAll(".nav_menu a[href]");
+        links.forEach(link => {
+            if (link.getAttribute("href")) {
+                // Perform operations on valid links
+            }
+        });
         if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
         } else {
@@ -165,6 +146,7 @@ function scrollActive() {
 window.addEventListener('scroll', scrollActive)
 
 /*=============== SHOW SCROLL UP ===============*/
+
 function scrollUp() {
     const scrollUp = document.getElementById('scroll-up');
     // When the scroll is higher than 400 viewport height, add the show-scroll class to the a tag with the scroll-top class
@@ -186,11 +168,7 @@ const getCurrentTheme = () => document.body.classList.contains(darkTheme) ? 'dar
 const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'ri-moon-line' : 'ri-sun-line'
 
 // We validate if the user previously chose a topic
-if (selectedTheme) {
-    // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the dark
-    document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](darkTheme)
-    themeButton.classList[selectedIcon === 'ri-moon-line' ? 'add' : 'remove'](iconTheme)
-}
+
 
 // Activate / deactivate the theme manually with the button
 themeButton.addEventListener('click', () => {
