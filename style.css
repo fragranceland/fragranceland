@@ -568,7 +568,6 @@ the website, in dark theme
 }
 
 .steps__card {
-  background-color: var(--container-color);
   /* padding: 2.5rem 3rem 2rem 1.5rem; */
   border-radius: 1rem;
 }
@@ -629,6 +628,21 @@ the website, in dark theme
   transition: .3s;
 }
 
+.section__title-header {
+  display: flex;
+  justify-content: space-between;
+
+  a {
+    color: black;
+
+  }
+
+  :hover {
+    cursor: pointer;
+  }
+
+}
+
 .product__title,
 .product__price {
   font-size: var(--small-font-size);
@@ -675,9 +689,84 @@ the website, in dark theme
   transform: translateY(-.5rem);
 }
 
-.nav__link{
+.nav__link {
   cursor: pointer;
 }
+
+/*=============== QUESTIONS ===============*/
+
+#video-section {
+  text-align: center;
+  padding: 0;
+}
+
+#video-section h2 {
+  font-size: .9em;
+  margin-bottom: 2px;
+}
+
+.video-container,
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+#video-section {
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+.video-overlay-container {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  max-width: 800px;
+  /* Optional, adjust based on your layout */
+}
+
+video {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.315);
+  /* Black overlay with 50% opacity */
+  pointer-events: none;
+  /* Ensures the overlay doesn't interfere with interactions */
+}
+
+.content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  z-index: 2;
+}
+
+.content h2 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.content p {
+  font-size: .7em;
+}
+
+#video-section h2 {
+  color: white;
+}
+
+
 
 /*=============== QUESTIONS ===============*/
 .questions {
@@ -1214,12 +1303,18 @@ the website, in dark theme
     column-gap: 5rem;
   }
 
-  .home-banner {
-    /* padding-top: 80px; */
-  }
 
   .steps__container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  #video-section h2 {
+    font-size: 1.8em;
+    margin-bottom: 2px;
+  }
+
+  .content p {
+    font-size: 1em;
   }
 
 }
@@ -1235,7 +1330,7 @@ the website, in dark theme
     padding: 6rem 2rem 0rem;
   }
 
-  .product{
+  .product {
     padding-top: 9rem;
   }
 
@@ -1368,6 +1463,15 @@ the website, in dark theme
   .nav__list {
     flex-direction: row;
     column-gap: 2rem;
+  }
+
+  #video-section h2 {
+    font-size: 3em;
+    margin-bottom: 2px;
+  }
+
+  .content p {
+    font-size: 1.5em;
   }
 
 }
