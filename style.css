@@ -468,16 +468,18 @@ the website, in dark theme
 /*=============== BUTTONS ===============*/
 .button {
   display: inline-block;
-  background-color: var(--first-color);
+  background-color: black;
   color: #FFF;
-  padding: 1rem 1.75rem;
-  border-radius: .5rem;
+  padding: 0.5rem 0.5rem;
+  border-radius: .2rem;
   font-weight: var(--font-medium);
   transition: .3s;
+  margin: 20px 0 10px 0;
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
+  background-color: rgba(0, 0, 0, 0.849);
+  cursor: pointer;
 }
 
 .button__icon {
@@ -505,6 +507,24 @@ the website, in dark theme
 
 .steps-section {
   background-color: #fcf8f5;
+}
+
+.show-more_btn {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (min-width: 1200px) {
+  .button {
+    display: inline-block;
+    background-color: black;
+    color: #FFF;
+    padding: 0.5rem 0.5rem;
+    border-radius: .2rem;
+    font-weight: var(--font-medium);
+    transition: .3s;
+    margin: 0px 0 40px 0;
+  }
 }
 
 /*=============== ABOUT ===============*/
