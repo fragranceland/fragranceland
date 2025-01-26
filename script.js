@@ -123,22 +123,17 @@ const toggleItem = (item) => {
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 const sections = document.querySelectorAll('section[id]')
 
-function scrollActive() {
+function scrollActive(){
     const scrollY = window.pageYOffset
 
-    sections.forEach(current => {
+    sections.forEach(current =>{
         const sectionHeight = current.offsetHeight,
-            sectionTop = current.offsetTop - 58,
-            sectionId = current.getAttribute('id')
-        const links = document.querySelectorAll(".nav_menu a[href]");
-        links.forEach(link => {
-            if (link.getAttribute("href")) {
-                // Perform operations on valid links
-            }
-        });
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+              sectionTop = current.offsetTop - 58,
+              sectionId = current.getAttribute('id')
+
+        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        } else {
+        }else{
             document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
         }
     })
