@@ -1,13 +1,63 @@
 .product-video-section {
+    position: relative;
+    width: 100%;
+    height: 30vh; /* Adjust the height as needed */
     margin-top: 100px;
+    overflow: hidden;
 }
 
-.mixing-page .section{
-    padding: 2rem 0 1rem !important;
+.product-video-section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image scales and fills the section */
+    z-index: 1; /* Keeps the image below the overlay and content */
+}
+
+.product-video-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
+    z-index: 2; /* Places the overlay above the image */
+}
+
+.product-video-section .content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 3; /* Ensures the content is above both the image and overlay */
+    color: white;
+    padding: 1rem;
+}
+
+.product-video-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.product-video-section p {
+    font-size: 1.2rem;
+    line-height: 1.5;
 }
 
 @media screen and (min-width: 1200px) {
     .product-video-section {
         margin-top: 0;
     }
+
+    .product-video-section {
+        position: relative;
+        width: 100%;
+        height: 100vh; /* Adjust the height as needed */
+        margin-top: 100px;
+        overflow: hidden;
+    }
 }
+
