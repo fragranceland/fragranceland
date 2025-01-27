@@ -1,7 +1,8 @@
 .product-video-section {
     position: relative;
     width: 100%;
-    height: 30vh; /* Adjust the height as needed */
+    height: 30vh;
+    /* Adjust the height as needed */
     margin-top: 100px;
     overflow: hidden;
 }
@@ -12,8 +13,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; /* Ensures the image scales and fills the section */
-    z-index: 1; /* Keeps the image below the overlay and content */
+    object-fit: cover;
+    /* Ensures the image scales and fills the section */
+    z-index: 1;
+    /* Keeps the image below the overlay and content */
 }
 
 .product-video-section .overlay {
@@ -22,8 +25,10 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent black */
-    z-index: 2; /* Places the overlay above the image */
+    background: rgba(0, 0, 0, 0.5);
+    /* Semi-transparent black */
+    z-index: 2;
+    /* Places the overlay above the image */
 }
 
 .product-video-section .content {
@@ -32,7 +37,8 @@
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    z-index: 3; /* Ensures the content is above both the image and overlay */
+    z-index: 3;
+    /* Ensures the content is above both the image and overlay */
     color: white;
     padding: 1rem;
 }
@@ -43,7 +49,7 @@
 }
 
 .product-video-section p {
-    font-size: 1.2rem;
+    font-size: 0.7rem;
     line-height: 1.5;
 }
 
@@ -55,9 +61,13 @@
     .product-video-section {
         position: relative;
         width: 100%;
-        height: 100vh; /* Adjust the height as needed */
+        height: 100vh;
+        /* Adjust the height as needed */
         margin-top: 100px;
         overflow: hidden;
     }
-}
 
+    .product-video-section p {
+        font-size: 1.5rem;
+    }
+}

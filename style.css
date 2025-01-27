@@ -224,7 +224,7 @@ the website, in dark theme
 .section__title,
 .section__title-center {
   font-size: var(--h2-font-size);
-  margin-bottom: var(--mb-2);
+  margin-bottom: var(--mb-1);
   line-height: 140%;
 }
 
@@ -1494,6 +1494,8 @@ video {
   .content p {
     font-size: 1.5em;
   }
+
+  
 
 }
 
